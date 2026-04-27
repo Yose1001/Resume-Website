@@ -1,0 +1,68 @@
+{
+  "personal": {
+    "name": "ธนพล สุวรรณรัตน์",
+    "nameEn": "Thanapol Suwannarut",
+    "title": "Full Stack Developer",
+    "email": "thanapol@example.com",
+    "phone": "+66 81-234-5678",
+    "location": "Bangkok, Thailand",
+    "github": "github.com/thanapol",
+    "linkedin": "linkedin.com/in/thanapol",
+    "summary": "นักพัฒนาซอฟต์แวร์ที่มีประสบการณ์มากกว่า 5 ปี เชี่ยวชาญด้าน React, Node.js และ Cloud Infrastructure มุ่งมั่นสร้างผลิตภัณฑ์ที่มีคุณภาพและ User Experience ที่ดีเยี่ยม"
+  },
+  "experience": [
+    {
+      "id": 1,
+      "company": "TechCorp Thailand",
+      "position": "Senior Full Stack Developer",
+      "period": "2022 – ปัจจุบัน",
+      "description": "นำทีมพัฒนา microservices ด้วย Node.js และ React ดูแลระบบที่รองรับผู้ใช้งานมากกว่า 500,000 ราย",
+      "highlights": ["ลดเวลา Load ของ App ลง 60%", "นำ CI/CD pipeline มาใช้งาน", "Mentor ทีมนักพัฒนา 5 คน"]
+    },
+    {
+      "id": 2,
+      "company": "StartupXYZ",
+      "position": "Full Stack Developer",
+      "period": "2020 – 2022",
+      "description": "พัฒนา E-commerce Platform ตั้งแต่ต้นจนถึงการ Launch ทำงานร่วมกับทีม Design และ Product",
+      "highlights": ["สร้าง RESTful API ด้วย Express.js", "ออกแบบ Database Schema ด้วย PostgreSQL", "พัฒนา React Frontend พร้อม Redux"]
+    },
+    {
+      "id": 3,
+      "company": "Digital Agency Co.",
+      "position": "Junior Developer",
+      "period": "2019 – 2020",
+      "description": "พัฒนาเว็บไซต์สำหรับลูกค้าหลากหลายประเภท ทั้ง WordPress และ Custom Web Apps",
+      "highlights": ["พัฒนาเว็บไซต์มากกว่า 15 โปรเจค", "เรียนรู้ Agile/Scrum methodology", "ดูแล Performance และ SEO"]
+    }
+  ],
+  "skills": {
+    "frontend": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux", "GraphQL"],
+    "backend": ["Node.js", "Express.js", "Python", "PostgreSQL", "MongoDB", "Redis"],
+    "devops": ["Docker", "AWS", "GitHub Actions", "Nginx", "Linux"],
+    "tools": ["Git", "Figma", "Jira", "VS Code", "Postman"]
+  },
+  "education": [
+    {
+      "institution": "มหาวิทยาลัยเกษตรศาสตร์",
+      "degree": "วิศวกรรมศาสตรบัณฑิต",
+      "field": "วิศวกรรมคอมพิวเตอร์",
+      "period": "2015 – 2019",
+      "gpa": "3.65"
+    }
+  ],
+  "projects": [
+    {
+      "name": "OpenTrack",
+      "description": "ระบบติดตาม Task แบบ Open-source สำหรับทีม Agile",
+      "tech": ["React", "Node.js", "Socket.io", "MongoDB"],
+      "link": "github.com/thanapol/opentrack"
+    },
+    {
+      "name": "WeatherTH",
+      "description": "แอปพยากรณ์อากาศสำหรับประเทศไทย พร้อม PWA support",
+      "tech": ["Next.js", "OpenWeather API", "TailwindCSS"],
+      "link": "github.com/thanapol/weatherth"
+    }
+  ]
+}
