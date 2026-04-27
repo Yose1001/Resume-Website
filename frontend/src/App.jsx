@@ -14,7 +14,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/api/resume')
+    fetch(`${process.env.REACT_APP_API_URL || ''}/api/resume`)
       .then((res) => {
         if (!res.ok) throw new Error('API Error');
         return res.json();
