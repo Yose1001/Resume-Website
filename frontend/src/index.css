@@ -51,10 +51,6 @@ a:hover { opacity: 0.75; }
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-@keyframes lineGrow {
-  from { transform: scaleX(0); }
-  to   { transform: scaleX(1); }
-}
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.4; }
@@ -92,14 +88,10 @@ a:hover { opacity: 0.75; }
   gap: 1.5rem;
 }
 
-.loading-dots {
-  display: flex;
-  gap: 0.5rem;
-}
+.loading-dots { display: flex; gap: 0.5rem; }
 
 .loading-dots span {
-  width: 6px;
-  height: 6px;
+  width: 6px; height: 6px;
   border-radius: 50%;
   background: var(--accent);
   animation: pulse 1.2s ease infinite;
@@ -124,4 +116,27 @@ a:hover { opacity: 0.75; }
   color: #e06060;
   font-family: var(--font-mono);
   font-size: 0.85rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ── Mobile Responsive ── */
+@media (max-width: 768px) {
+  .container { padding: 0 1.25rem; }
+
+  /* Contact layout */
+  .contact-layout {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  /* Education card */
+  .education-card {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  .education-right {
+    text-align: left !important;
+  }
 }

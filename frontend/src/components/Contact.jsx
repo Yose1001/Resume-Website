@@ -3,12 +3,6 @@ import React, { useState } from 'react';
 const s = {
   section: { padding: '6rem 2rem', borderTop: '1px solid var(--border)' },
   inner: { maxWidth: '1100px', margin: '0 auto' },
-  layout: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gap: '5rem',
-    alignItems: 'start',
-  },
   title: {
     fontFamily: 'var(--font-display)',
     fontSize: 'clamp(2rem, 5vw, 3.5rem)',
@@ -136,7 +130,14 @@ export default function Contact({ personal }) {
   return (
     <section id="contact" style={s.section}>
       <div style={s.inner}>
-        <div style={s.layout}>
+        {/* Responsive Layout */}
+        <div className="contact-layout" style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: '5rem',
+          alignItems: 'start',
+        }}>
+          {/* Left */}
           <div>
             <p className="section-label">05 — Contact</p>
             <h2 style={s.title}>ติดต่อ</h2>
@@ -159,6 +160,7 @@ export default function Contact({ personal }) {
             </div>
           </div>
 
+          {/* Right - Form */}
           <form style={s.form} onSubmit={handleSubmit}>
             <div style={s.inputGroup}>
               <label style={s.label}>ชื่อ</label>
@@ -207,6 +209,16 @@ export default function Contact({ personal }) {
           </form>
         </div>
       </div>
+
+      {/* Mobile Responsive */}
+      <style>{`
+        @media (max-width: 768px) {
+          .contact-layout {
+            grid-template-columns: 1fr !important;
+            gap: 2.5rem !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }
